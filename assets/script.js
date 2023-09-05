@@ -78,13 +78,16 @@ function close(){
 function welcome(){
     let screen = document.querySelector("header");
     let welcomeMsg = document.querySelector("header h1");
-    setTimeout(x=>{
+    setTimeout(w=>{
         welcomeMsg.style.opacity="1";
     },1000);
-    setTimeout(y=>{
+    setTimeout(x=>{
         screen.style.opacity="0";
     },2500);
-    setTimeout(z=>{
+    setTimeout(y=>{
         screen.remove();
     },3500);
+    setTimeout(z=>{
+        ajuda();
+    },3600);
 }
