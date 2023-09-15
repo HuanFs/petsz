@@ -112,3 +112,32 @@ button:hover{
     color:#fff;
     background-color:#ff0000a9;
 }
+
+@media screen and (max-width:413px){
+    body{
+        background-color:rgb(128, 61, 61);
+    }
+    nav{
+        top:35%;
+    }
+    nav button:not(:first-child){
+        display:none;
+    }
+    header h1{
+        width:250px;
+        font-size:1.3em;
+        position:absolute;
+        top:20%;
+        left:5%;
+    }
+    main img{
+        width:50%;
+        height:50%; 
+    }
+    #dialog{
+        height:340px;
+        width:250px;
+        top:20%;
+        left:5%;
+    }
+}
