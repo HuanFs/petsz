@@ -1,3 +1,4 @@
+
 *{
     margin:0px;
     padding:0px;
@@ -40,8 +41,6 @@ main img{
     width:100%;
 }
 nav{
-    /* width:160px;
-    height:160px; */
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -80,6 +79,8 @@ button:hover{
     color:#000;
     border-color:#000;
 }
+/*campo que contém a mensagem de apresentação e também as dicas sobre o funcionamento
+da aplicação*/
 #dialog{
     height:230px;
     width:350px;
@@ -113,6 +114,7 @@ button:hover{
     background-color:#ff0000a9;
 }
 
+/*design alternativo para dispositivos móveis ou telas menores que 413px)*/
 @media screen and (max-width:413px){
     body{
         background-color:rgb(128, 61, 61);

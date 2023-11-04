@@ -1,11 +1,10 @@
 //declarção das variáveis
-let wid = window.innerWidth;
-let greetings = document.querySelector("span");
-let buttons = document.querySelectorAll("nav button");
-let closeBtn = document.querySelector("#dialog button");
-let cont = 0;
-let openClose = 0;
-let img = document.querySelector("main img");
+let wid = window.innerWidth; //largura da janela
+let buttons = document.querySelectorAll("nav button"); //todos os botões da aplicação
+let closeBtn = document.querySelector("#dialog button"); //botão que fecha a área de ação
+let cont = 0; //contadores para acompanhar o estado de um determinado "componente"**
+let openClose = 0;//**
+let img = document.querySelector("main img");//imagem que vão mudar e exibir mais ou menos cachorros
 //adição dos eventos
 buttons[0].addEventListener("click", showHide);
 buttons[1].addEventListener("click",remv);
@@ -74,7 +73,7 @@ function close(){
     let dialog = document.getElementById("dialog");
     dialog.remove();
 }
-//função que execute uma animação de boas vindas;
+//função que executa uma animação de boas vindas quando o site é aberto pela primeira vez;
 function welcome(){
     let screen = document.querySelector("header");
     let welcomeMsg = document.querySelector("header h1");
